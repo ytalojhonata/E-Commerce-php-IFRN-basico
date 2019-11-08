@@ -12,7 +12,15 @@
 */
 
 Route::get('/',('PagController@inicio'));
+             
+
+            /* ##### Rotas de cardapio ##### */
 Route::get('/cardapio',('PagController@carda'));
+Route::get('/cardapio_sanduiches',('PagController@carda_h'));
+Route::get('/cardapio_saladas',('PagController@carda_sa'));
+Route::get('/cardapio_sobremesas',('PagController@carda_so'));
+             
+             /* ##### Rotas de alimentos ##### */
 Route::get('/hamburguer',('PagController@hamb'));
 Route::get('/sobremesa',('PagController@sobreme'));
 Route::get('/saladaa',('PagController@salad'));
