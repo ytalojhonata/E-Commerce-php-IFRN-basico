@@ -14,4 +14,18 @@ class PagController extends Controller
     {
       return view('cardapio_h');
     }
+    public function carda_h()
+    {
+      return view('cardapio_h');
+    }
+    public function carda_sa()
+    {
+      return view('cardapio_sa');
+    }
+    public function carda_so()
+    {
+      return view('cardapio_so');
+    }
+
+
 }
