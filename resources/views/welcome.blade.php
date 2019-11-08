@@ -12,7 +12,8 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+  
+   <link rel="stylesheet" href="{{ asset('vendor/Ionicons/css/ionicons.min.css') }}">
   <!-- Custom styles for this template -->
   <link href="css/modern-business.css" rel="stylesheet">
 
@@ -88,10 +89,10 @@
             <a class="nav-link" href="#">Sanduíches</a>
             <a class="nav-link" href="#">Saladas</a>
             <a class="nav-link" href="#">Sobremesas</a>
-            <a class="nav-link" href="#">Sobre Nos</a>
             <a class="nav-link" href="{{ route('login')}}">Login</a>
             <a class="nav-link" href="{{ route('register')}}">Registrar</a>
-            
+            <a class="nav-link" href="#">Carrinho</a>
+          
 
            </div>
           

@@ -110,7 +110,7 @@
 
     /*-----------------------------#Lariburger#-----------------------------------------*/
      
-    /*-----------------------------#Pagina-geral#-----------------------------------------*/
+     /*-----------------------------#Pagina-geral#-----------------------------------------*/
     .imagem-fixa{
       width: 825px;
       height: 635px;
@@ -166,12 +166,15 @@
       <!-- /.col-lg-3 -->
 
       <div class="col-lg-9">
+
+          <div class="col-lg-9">
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-          
           <div class="imagem-fixa" >
-             <img src="imagens/slideh.png" width="820 px" height="630 px">
+             <img src="imagens/slidec.png" width="820 px" height="630 px">
           </div>
          </div>
+         
+        </div>
 
         <div class="row">
 

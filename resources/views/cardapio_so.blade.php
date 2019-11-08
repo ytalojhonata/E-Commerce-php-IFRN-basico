@@ -50,7 +50,7 @@
         border-color:   #e67300;
        }
         .btn-primary5{
-        background-color: #ffe066;
+        background-color:s;
         border-color:   #ffe066;
        }
         .btn-primaryy5:hover{
@@ -110,11 +110,7 @@
 
     /*-----------------------------#Lariburger#-----------------------------------------*/
      
-    /*-----------------------------#Pagina-geral#-----------------------------------------*/
-    .imagem-fixa{
-      width: 825px;
-      height: 635px;
-    }
+
    </style>
 </head>
 
@@ -166,33 +162,30 @@
       <!-- /.col-lg-3 -->
 
       <div class="col-lg-9">
+
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-          
+          <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
           <div class="imagem-fixa" >
-             <img src="imagens/slideh.png" width="820 px" height="630 px">
+             <img src="imagens/slides.png" width="820 px" height="630 px">
           </div>
          </div>
-
+         
+        </div>
         <div class="row">
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/bacon.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="imagens/sundae1.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Australiano artesanal</a>
+                  <a href="#">Sundae Chocolate</a>
                 </h4>
-                <h5>R$ 11,75</h5>
+                <h5>R$ 08,25</h5>
                 <p class="card-text">
-                  <button type="button" class="btn btn-primary1">Pão Australiano</button>  
-                  <button type="button" class="btn btn-primary2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-primary3">Molho barbecue </button>
-                  <br> 
-                  <button type="button" class="btn btn-primary4">Bacon</button>
-                  <br>
-                  <button type="button" class="btn btn-primary5">Queijo</button>
-                  <br>
-                  <button type="button" class="btn btn-primary6">Cebola crispy</button>
+                  <button type="button" class="btn btn-primary1">Canudinho Waffle</button>  
+                  <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
+                  <button type="button" class="btn btn-primary3">Cobertura de Nutella</button>
+                  <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
               </div>
             </div>
@@ -200,98 +193,93 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/chessburger.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="imagens/sundae2.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Chessburguer</a>
+                  <a href="#">Sundae de Morango</a>
                 </h4>
-                <h5>R$ 08,50</h5>
+                <h5>R$ 08,25</h5>
                 <p class="card-text">
-                  <button type="button" class="btn btn-secondary1">Pão</button>  
-                  <button type="button" class="btn btn-secondary2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-secondary3">Queijo Parmessão </button> 
-                  <button type="button" class="btn btn-secondary4">Queijo Cheddar</button>
-                  <button type="button" class="btn btn-secondary5">Queijo Prato </button>
+                  <button type="button" class="btn btn-primary1">Canudinho Waffle</button>  
+                  <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
+                  <button type="button" class="btn btn-primary3">Cobertura de Morango</button>
+                  <button type="button" class="btn btn-primary4">Castanha</button>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/lariburger.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="imagens/sundae3.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Lariburguer</a>
+                  <a href="#">Sundae Misto</a>
                 </h4>
-                <h5>R$ 10,00</h5>
+                <h5>R$ 10,25</h5>
                 <p class="card-text">
-                  <button type="button" class="btn btn-primary1">Pão</button>  
-                  <button type="button" class="btn btn-primary2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-danger3">Molho barbecue</button> 
-                  <button type="button" class="btn btn-danger4">Queijo Prato</button>
-                  <br>
-                  <button type="button" class="btn btn-danger5">Tomate</button>
-                  <button type="button" class="btn btn-danger6">Alface Americano</button>
-                </p>
+                  <button type="button" class="btn btn-primary1">Canudinho Waffle</button>  
+                  <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
+                  <button type="button" class="btn btn-primary3">Cobertura de Morango</button>
+                  <button type="button" class="btn btn-primary3">Cobertura de Nutella</button>
+                  <button type="button" class="btn btn-primary4">Castanha</button>
               </div>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/bigburger.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="imagens/cascao1.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Big Burguer</a>
+                  <a href="#">Cascão de Chocolate</a>
                 </h4>
-                <h5>R$ 09,00</h5>
+                <h5>R$ 06,50</h5>
                 <p class="card-text">
-                  <button type="button" class="btn btn-warning1">Pão</button>  
-                  <button type="button" class="btn btn-warning2">Hamburguer Bovino</button> 
-                  <button type="button" class="btn btn-warning3">Queijo Parmessão </button> 
-                  <button type="button" class="btn btn-warning4">Queijo Cheddar</button>
-                  <button type="button" class="btn btn-warning5">Queijo Prato </button>
+              <button type="button" class="btn btn-primary1">Casca crocante de baunilha</button> 
+              <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
+              <button type="button" class="btn btn-primary3">Cobertura de Nutella</button>
+              <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
+           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/franburger.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="imagens/cascao2.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Franburguer</a>
+                  <a href="#">Cascão de Morango</a>
                 </h4>
-                <h5>R$ 12,50</h5>
+                <h5>R$ 06,50</h5>
                 <p class="card-text">
-                  <button type="button" class="btn btn-info1">Pão</button>  
-                  <button type="button" class="btn btn-info2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-info3">Queijo Parmessão </button> 
-                  <button type="button" class="btn btn-info4">Queijo Cheddar</button>
-                  <button type="button" class="btn btn-info5">Queijo Prato </button>
+              <button type="button" class="btn btn-primary1">Casca crocante de baunilha</button> 
+              <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
+              <button type="button" class="btn btn-primary3">Cobertura de Morango</button>
+              <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
+           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/picanha.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="imagens/cascao3.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Burguer Picanha</a>
+                  <a href="#">Cascão Misto</a>
                 </h4>
-                <h5>R$ 13,00</h5>
+                <h5>R$ 09,50</h5>
                 <p class="card-text">
-                  <button type="button" class="btn btn-sucess1">Pão</button>  
-                  <button type="button" class="btn btn-sucess2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-sucess3">Queijo Parmessão </button> 
-                  <button type="button" class="btn btn-sucess4">Queijo Cheddar</button>
-                  <button type="button" class="btn btn-sucess5">Queijo Prato </button>
+              <button type="button" class="btn btn-primary1">Casca crocante de baunilha</button> 
+              <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
+              <button type="button" class="btn btn-primary3">Cobertura de Nutella</button>
+              <button type="button" class="btn btn-primary3">Cobertura de Morango</button>
+              <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
               </div>
             </div>
+          </div>
           </div>
 
         </div>
