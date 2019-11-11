@@ -116,7 +116,7 @@
 
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style= "background-image: url('imagens/slidec.png');height: 700px; width: 1343px;" >
+        <div class="carousel-item" style= "background-image: url('imagens/Slidec.png');height: 700px; width: 1343px;" >
          
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
