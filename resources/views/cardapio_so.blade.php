@@ -120,6 +120,9 @@
     .bg-dark{
       background-color: #ff3333!important;
     }
+     button{
+      height: 30px;
+    }
 
    </style>
 </head>
@@ -203,6 +206,11 @@
                   <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -220,6 +228,11 @@
                   <button type="button" class="btn btn-primary3">Cobertura de Morango</button>
                   <button type="button" class="btn btn-primary4">Castanha</button>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -238,6 +251,11 @@
                   <button type="button" class="btn btn-primary3">Cobertura de Nutella</button>
                   <button type="button" class="btn btn-primary4">Castanha</button>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -256,6 +274,11 @@
               <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -274,6 +297,11 @@
               <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -293,6 +321,11 @@
               <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
           </div>

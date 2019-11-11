@@ -137,7 +137,7 @@
 
   <!-- Page Content -->
   <div class="container" style="width: 1340px;">
-    <a href="{{ url('/carrinho_saladas') }}"><img class="salada-img" src="imagens/saladas.png" ></a>
+    <a href="{{ url('/cardapio_saladas') }}"><img class="salada-img" src="imagens/saladas.png" ></a>
    </div>
 
    
@@ -150,7 +150,7 @@
   
   </div>
   <div class="sobremesa-foto">
-  <a href="{{ url('/carrinho_sobremesas') }}"><img src="imagens/sobremesa.jpg" style=" height: 590px;
+  <a href="{{ url('/cardapio_sobremesas') }}"><img src="imagens/sobremesa.jpg" style=" height: 590px;
   width: 540px;"></a>
     
   </div>
