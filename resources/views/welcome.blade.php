@@ -92,9 +92,11 @@
             <a class="nav-link" href="{{ route('login')}}">Login</a>
             <a class="nav-link" href="{{ route('register')}}">Registrar</a>
             <a class="nav-link" href="{{ url('/carrinho') }}">Carrinho</a>
-          
-
-           </div>
+            <a class="nav-link" href="#" onclick="document.getElementById('logout-form')         .submit();">Sair</a>
+            <form id="logout-form" action="{{ url(config('adminlte.logout_url', 'auth/logout')) }}" method="POST" style="display: none;">
+                  {{ csrf_field() }}
+              </form>
+          </div>
           
           </li>
           </ul>
