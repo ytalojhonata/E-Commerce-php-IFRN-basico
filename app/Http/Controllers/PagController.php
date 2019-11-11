@@ -3,9 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Produto;
+use App\Http\Controllers\Controller;
 
 class PagController extends Controller
 {
+ 
+   
+
+
    public function inicio()
     {
       return view('welcome');
@@ -26,6 +32,10 @@ class PagController extends Controller
     {
       return view('cardapio_so');
     }
+    
+    
 
+    
+    
 
 }

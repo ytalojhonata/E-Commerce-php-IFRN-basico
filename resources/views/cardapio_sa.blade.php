@@ -17,7 +17,11 @@
   <link href="css/shop-homepage.css" rel="stylesheet">
    
    <style type="text/css">
-        .btn-primary1{
+        .navbar{
+        background-color: #ff3333!important;
+       }
+
+        /*.btn-primary1{
         background-color:#d39e00;
         border-color:   #d39e00;
        }
@@ -65,9 +69,9 @@
         background-color:   #ffe066;
         border-color:   #ffe066;
        }
-    
+       */
     /*-----------------------------#Chessburger#-----------------------------------------*/        
-        .btn-secondary1{
+        /*.btn-secondary1{
         background-color:#d39e00;
         border-color:   #d39e00;
        }
@@ -107,13 +111,19 @@
         background-color:   #ffe066;
         border-color:   #ffe066;
        }
-
+     */
     /*-----------------------------#Lariburger#-----------------------------------------*/
      
      /*-----------------------------#Pagina-geral#-----------------------------------------*/
     .imagem-fixa{
       width: 825px;
       height: 635px;
+    }
+    button{
+      height: 30px;
+    }
+    .bg-dark{
+      background-color: #ff3333!important;
     }
    </style>
 </head>
@@ -132,6 +142,11 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="{{ url('/') }}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url('/carrinho') }}">Carrinho
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -180,122 +195,80 @@
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/bacon.png" alt=""></a>
+              <a href="#"><img class="card-img-top" src="imagens/salada1.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Australiano artesanal</a>
+                  <a href="#">Salada de folhas com ovo de codorna</a>
                 </h4>
-                <h5>R$ 11,75</h5>
+                <h5>R$ 11,00</h5>
                 <p class="card-text">
-                  <button type="button" class="btn btn-primary1">Pão Australiano</button>  
-                  <button type="button" class="btn btn-primary2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-primary3">Molho barbecue </button>
+                  <button type="button" class="btn btn-secondary1">Alface Americana</button>  
+                  <button type="button" class="btn btn-secondary2">Ovo de Codorna</button> 
+                  <button type="button" class="btn btn-secondary3">Tomate Cereja</button>
+                  <br>
+                  <button type="button" class="btn btn-secondary4">Repolho</button>
+                  <br>
+                  <button type="button" class="btn btn-secondary5">Cenoura</button>
+              </div>
+              <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="imagens/salada2.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Mix de folhas acompanhado de tomate,cebola e frango empanado </a>
+                </h4>
+                <h5>R$ 12,00</h5>
+                <p class="card-text">
+                  <button type="button" class="btn btn-secondary1">Alface Americana</button>  
+                  <button type="button" class="btn btn-secondary2">Frango Crispy</button> 
+                  <br>
+                  <button type="button" class="btn btn-secondary3">Tomate</button>
+                  <br>
+                  <button type="button" class="btn btn-secondary4">Repolho</button>
+                  <br>
+                  <button type="button" class="btn btn-secondary5">Cenoura</button>
+              </div>
+              <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
+            </div>
+          </div>
+
+         <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="imagens/salada3.png" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#">Salada tropical acompanhado de frango grelhado</a>
+                </h4>
+                <h5>R$ 12,00</h5>
+                <p class="card-text">
+                  <button type="button" class="btn btn-secondary1">Alface Americana</button>  
+                  <button type="button" class="btn btn-secondary2">Ovo de frango grelhado</button> 
+                  <button type="button" class="btn btn-secondary3">Tomate</button>
                   <br> 
-                  <button type="button" class="btn btn-primary4">Bacon</button>
+                  <button type="button" class="btn btn-secondary4">Repolho</button>
                   <br>
-                  <button type="button" class="btn btn-primary5">Queijo</button>
-                  <br>
-                  <button type="button" class="btn btn-primary6">Cebola crispy</button>
-                </p>
+                  <button type="button" class="btn btn-secondary5">Cenoura</button>
               </div>
+              <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/chessburger.png" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Chessburguer</a>
-                </h4>
-                <h5>R$ 08,50</h5>
-                <p class="card-text">
-                  <button type="button" class="btn btn-secondary1">Pão</button>  
-                  <button type="button" class="btn btn-secondary2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-secondary3">Queijo Parmessão </button> 
-                  <button type="button" class="btn btn-secondary4">Queijo Cheddar</button>
-                  <button type="button" class="btn btn-secondary5">Queijo Prato </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/lariburger.png" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Lariburguer</a>
-                </h4>
-                <h5>R$ 10,00</h5>
-                <p class="card-text">
-                  <button type="button" class="btn btn-primary1">Pão</button>  
-                  <button type="button" class="btn btn-primary2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-danger3">Molho barbecue</button> 
-                  <button type="button" class="btn btn-danger4">Queijo Prato</button>
-                  <br>
-                  <button type="button" class="btn btn-danger5">Tomate</button>
-                  <button type="button" class="btn btn-danger6">Alface Americano</button>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/bigburger.png" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Big Burguer</a>
-                </h4>
-                <h5>R$ 09,00</h5>
-                <p class="card-text">
-                  <button type="button" class="btn btn-warning1">Pão</button>  
-                  <button type="button" class="btn btn-warning2">Hamburguer Bovino</button> 
-                  <button type="button" class="btn btn-warning3">Queijo Parmessão </button> 
-                  <button type="button" class="btn btn-warning4">Queijo Cheddar</button>
-                  <button type="button" class="btn btn-warning5">Queijo Prato </button>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/franburger.png" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Franburguer</a>
-                </h4>
-                <h5>R$ 12,50</h5>
-                <p class="card-text">
-                  <button type="button" class="btn btn-info1">Pão</button>  
-                  <button type="button" class="btn btn-info2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-info3">Queijo Parmessão </button> 
-                  <button type="button" class="btn btn-info4">Queijo Cheddar</button>
-                  <button type="button" class="btn btn-info5">Queijo Prato </button>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="imagens/picanha.png" alt=""></a>
-              <div class="card-body">
-                <h4 class="card-title">
-                  <a href="#">Burguer Picanha</a>
-                </h4>
-                <h5>R$ 13,00</h5>
-                <p class="card-text">
-                  <button type="button" class="btn btn-sucess1">Pão</button>  
-                  <button type="button" class="btn btn-sucess2">Hamburguer bovino</button> 
-                  <button type="button" class="btn btn-sucess3">Queijo Parmessão </button> 
-                  <button type="button" class="btn btn-sucess4">Queijo Cheddar</button>
-                  <button type="button" class="btn btn-sucess5">Queijo Prato </button>
-                </p>
-              </div>
-            </div>
-          </div>
 
         </div>
         <!-- /.row -->
@@ -312,7 +285,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Laricook-2019</p>
     </div>
     <!-- /.container -->
   </footer>

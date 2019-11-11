@@ -86,12 +86,12 @@
             
           <div class="btn-group">
             <a class="nav-link" href="{{ url('/cardapio') }}">Cardápio completo</a>
-            <a class="nav-link" href="#">Sanduíches</a>
-            <a class="nav-link" href="#">Saladas</a>
-            <a class="nav-link" href="#">Sobremesas</a>
+            <a class="nav-link" href="{{ url('/cardapio_sanduiches') }}">Sanduíches</a>
+            <a class="nav-link" href="{{ url('/cardapio_saladas') }}">Saladas</a>
+            <a class="nav-link" href="{{ url('/cardapio_sobremesas') }}">Sobremesas</a>
             <a class="nav-link" href="{{ route('login')}}">Login</a>
             <a class="nav-link" href="{{ route('register')}}">Registrar</a>
-            <a class="nav-link" href="#">Carrinho</a>
+            <a class="nav-link" href="{{ url('/carrinho') }}">Carrinho</a>
           
 
            </div>
@@ -137,7 +137,7 @@
 
   <!-- Page Content -->
   <div class="container" style="width: 1340px;">
-    <a href="#"><img class="salada-img" src="imagens/saladas.png" ></a>
+    <a href="{{ url('/carrinho_saladas') }}"><img class="salada-img" src="imagens/saladas.png" ></a>
    </div>
 
    
@@ -150,7 +150,7 @@
   
   </div>
   <div class="sobremesa-foto">
-  <a href="#"><img src="imagens/sobremesa.jpg" style=" height: 590px;
+  <a href="{{ url('/carrinho_sobremesas') }}"><img src="imagens/sobremesa.jpg" style=" height: 590px;
   width: 540px;"></a>
     
   </div>
@@ -177,7 +177,7 @@ function carousel() {
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Laricook-2019</p>
     </div>
     <!-- /.container -->
   </footer>

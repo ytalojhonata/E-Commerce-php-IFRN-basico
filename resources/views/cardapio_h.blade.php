@@ -17,7 +17,11 @@
   <link href="css/shop-homepage.css" rel="stylesheet">
    
    <style type="text/css">
-        .btn-primary1{
+       .navbar{
+        background-color: #ff3333!important;
+       }
+
+        /*.btn-primary1{
         background-color:#d39e00;
         border-color:   #d39e00;
        }
@@ -65,9 +69,9 @@
         background-color:   #ffe066;
         border-color:   #ffe066;
        }
-    
+       */
     /*-----------------------------#Chessburger#-----------------------------------------*/        
-        .btn-secondary1{
+        /*.btn-secondary1{
         background-color:#d39e00;
         border-color:   #d39e00;
        }
@@ -107,13 +111,19 @@
         background-color:   #ffe066;
         border-color:   #ffe066;
        }
-
+    */
     /*-----------------------------#Lariburger#-----------------------------------------*/
      
     /*-----------------------------#Pagina-geral#-----------------------------------------*/
     .imagem-fixa{
       width: 825px;
       height: 635px;
+    }
+    button{
+      height: 30px;
+    }
+    .bg-dark{
+      background-color: #ff3333!important;
     }
    </style>
 </head>
@@ -136,6 +146,11 @@
             </a>
           </li>
           <li class="nav-item active">
+            <a class="nav-link" href="{{ url('/carrinho') }}">Carrinho
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
             <i class="nav-link">
                 <a href="#" onclick="document.getElementById('logout-form').submit();">Sair</a>
             </i>
@@ -152,7 +167,7 @@
   <div class="container">
 
     <div class="row">
-
+     
       <div class="col-lg-3">
 
         <h1 class="my-4">Cardápio</h1>
@@ -172,15 +187,15 @@
              <img src="imagens/slideh.png" width="820 px" height="630 px">
           </div>
          </div>
-
+  
         <div class="row">
-
+         
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a href="#"><img class="card-img-top" src="imagens/bacon.png" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#">Australiano artesanal</a>
+                  <a href="#">Australiano Artesanal</a>
                 </h4>
                 <h5>R$ 11,75</h5>
                 <p class="card-text">
@@ -195,6 +210,11 @@
                   <button type="button" class="btn btn-primary6">Cebola crispy</button>
                 </p>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -213,6 +233,11 @@
                   <button type="button" class="btn btn-secondary4">Queijo Cheddar</button>
                   <button type="button" class="btn btn-secondary5">Queijo Prato </button>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -234,6 +259,11 @@
                   <button type="button" class="btn btn-danger6">Alface Americano</button>
                 </p>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -253,6 +283,11 @@
                   <button type="button" class="btn btn-warning5">Queijo Prato </button>
                 </p>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -272,6 +307,11 @@
                   <button type="button" class="btn btn-info5">Queijo Prato </button>
                 </p>
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
 
@@ -290,10 +330,16 @@
                   <button type="button" class="btn btn-sucess4">Queijo Cheddar</button>
                   <button type="button" class="btn btn-sucess5">Queijo Prato </button>
                 </p>
+              
               </div>
+               <form method="POST" action="{{ route('carrinho.adicionar') }}">
+                {{ csrf_field() }}
+                <input type="hidden" name="nome" value="{{  $produtos ?? '' }}">
+                <button class="btn-large col l6 m6 s6 green accent-4 tooltipped" data-position="bottom" data-delay="50" data-tooltip="O produto será adicionado ao seu carrinho">COMPRAR</button>   
+            </form>
             </div>
           </div>
-
+          
         </div>
         <!-- /.row -->
 
@@ -309,7 +355,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Laricook-2019</p>
     </div>
     <!-- /.container -->
   </footer>

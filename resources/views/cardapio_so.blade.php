@@ -17,7 +17,12 @@
   <link href="css/shop-homepage.css" rel="stylesheet">
    
    <style type="text/css">
-        .btn-primary1{
+
+         .navbar{
+        background-color: #ff3333!important;
+       }
+
+        /*.btn-primary1{
         background-color:#d39e00;
         border-color:   #d39e00;
        }
@@ -65,9 +70,9 @@
         background-color:   #ffe066;
         border-color:   #ffe066;
        }
-    
+       */
     /*-----------------------------#Chessburger#-----------------------------------------*/        
-        .btn-secondary1{
+        /*.btn-secondary1{
         background-color:#d39e00;
         border-color:   #d39e00;
        }
@@ -107,9 +112,14 @@
         background-color:   #ffe066;
         border-color:   #ffe066;
        }
-
+      */
     /*-----------------------------#Lariburger#-----------------------------------------*/
-     
+       button{
+      height: 30px;
+    }
+    .bg-dark{
+      background-color: #ff3333!important;
+    }
 
    </style>
 </head>
@@ -128,6 +138,11 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="{{ url('/') }}">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{ url('/carrinho') }}">Carrinho
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -235,8 +250,8 @@
                 </h4>
                 <h5>R$ 06,50</h5>
                 <p class="card-text">
-              <button type="button" class="btn btn-primary1">Casca crocante de baunilha</button> 
-              <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
+              <button type="button" class="btn btn-primary1">Cascão de baunilha</button>
+              <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button>
               <button type="button" class="btn btn-primary3">Cobertura de Nutella</button>
               <button type="button" class="btn btn-primary4">Castanha</button>
                 </p>
@@ -253,7 +268,7 @@
                 </h4>
                 <h5>R$ 06,50</h5>
                 <p class="card-text">
-              <button type="button" class="btn btn-primary1">Casca crocante de baunilha</button> 
+              <button type="button" class="btn btn-primary1">Cascão de baunilha</button> 
               <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
               <button type="button" class="btn btn-primary3">Cobertura de Morango</button>
               <button type="button" class="btn btn-primary4">Castanha</button>
@@ -271,7 +286,7 @@
                 </h4>
                 <h5>R$ 09,50</h5>
                 <p class="card-text">
-              <button type="button" class="btn btn-primary1">Casca crocante de baunilha</button> 
+              <button type="button" class="btn btn-primary1">Cascão de baunilha</button> 
               <button type="button" class="btn btn-primary2">Sorvete de Baunilha</button> 
               <button type="button" class="btn btn-primary3">Cobertura de Nutella</button>
               <button type="button" class="btn btn-primary3">Cobertura de Morango</button>
@@ -297,7 +312,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; Laricook-2019</p>
     </div>
     <!-- /.container -->
   </footer>

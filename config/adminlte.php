@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'title' => 'Laricook-registro',
+    'title' => 'Laricook',
 
     'title_prefix' => '',
 
@@ -30,9 +30,9 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>LariCook</b>',
 
-    'logo_mini' => '<b>A</b>LT',
+    'logo_mini' => '<b></b>',
 
     /*
     |--------------------------------------------------------------------------

@@ -13,17 +13,18 @@ class CreatePedidoProdutosTable extends Migration
      */
     public function up()
     {
-        Schema::create('pedido_produtos', function (Blueprint $table) {
+       Schema::create('pedido_produtos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome');
-            $table->string('localizador')->unique();
+            $table->integer('pedido_id')->unsigned(); // unsigned: somente inteiros positivos
+            $table->integer('produto_id')->unsigned();  // unsigned: somente inteiros positivos
+            $table->enum('status', ['RE', 'PA', 'CA']); // Reservado, Pago, Cancelado
+            $table->decimal('valor', 6, 2)->default(0);
             $table->decimal('desconto', 6, 2)->default(0);
-            $table->enum('modo_desconto', ['valor', 'porc'])->default('porc');
-            $table->decimal('limite', 6, 2)->default(0);
-            $table->enum('modo_limite', ['valor', 'qtd'])->default('qtd');
-            $table->dateTime('dthr_validade');
-            $table->enum('ativo', ['S', 'N'])->default('S');
+            $table->integer('cupom_desconto_id')->nullable()->unsigned(); // unsigned: somente inteiros positivos
             $table->timestamps();
+            $table->foreign('pedido_id')->references('id')->on('pedidos');
+            $table->foreign('produto_id')->references('id')->on('produtos');
+            $table->foreign('cupom_desconto_id')->references('id')->on('cupom_descontos');
         });
     }
 
