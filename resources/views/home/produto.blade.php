@@ -18,7 +18,7 @@
    
    <style type="text/css">
        .navbar{
-        background-color: #ff3333!important;
+        background-color: black!important;
        }
 
      
@@ -31,11 +31,11 @@
       height: 30px;
     }
     .bg-dark{
-      background-color: #ff3333!important;
+      background-color: black!important;
     }
     .btn-danger{
-      background-color: #ff3333!important;
-      border-color: #ff3333!important;
+      background-color: black!important;
+      border-color: black!important;
     }
     .dropdown-menu{
       position:relative;
@@ -48,6 +48,7 @@
       color: white;
     }
     
+
    </style>
 </head>
 
@@ -116,7 +117,6 @@
           <a href="{{url('cardapio_sobremesas') }}" class="list-group-item">Sobremesas</a>
         </div>
 
-
       </div>
       <!-- /.col-lg-3 -->
 
@@ -124,7 +124,7 @@
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
           
           <div class="imagem-fixa" >
-             <img src="imagens/slidec.png" width="820 px" height="630 px">
+             <img src="imagens/slideh.png" width="820 px" height="630 px">
           </div>
          </div>
    
@@ -179,4 +179,3 @@
 </body>
 
 </html>
-

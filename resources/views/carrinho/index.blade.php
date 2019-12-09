@@ -2,14 +2,7 @@
 @section('pagina_titulo', 'Carrinho' )
 
 @section('pagina_conteudo')
-<style type="text/css">
-    .nav-wrapper{
-        background-color: #ff3333!important; 
-    }
-    .page-footer{
-        background-color: #ff3333!important;
-    }
-</style>
+
 <div class="container">
     <div class="row">
         <h3>Produtos no carrinho</h3>
@@ -45,10 +38,12 @@
                     @foreach ($pedido->pedido_produtos as $pedido_produto)
 
                     <tr>
-                        
+                        <td>
+                            <img width="100" height="100" src="images/{{ $pedido_produto->produto->imagem }}">
+                        </td>
                         <td class="center-align">
                             <div class="center-align">
-                                <a class="col l4 m4 s4" href="#" onclick="carrinhoRemoverProduto({{ $pedido->id }}, {{ $pedido_produto->produto_id }}, 1 )">
+                                <a class="col l4 m4 s4" href="#" onclick="carrinhoRemoverProduto({{ $pedido->id}}, {{ $pedido_produto->produto_id }}, 1 )">
                                     <i class="material-icons small">remove_circle_outline</i>
                                 </a>
                                 <span class="col l4 m4 s4"> {{ $pedido_produto->qtd }} </span>
@@ -84,7 +79,7 @@
                 </form>
             </div>
             <div class="row">
-                <a class="btn-large tooltipped col l4 s4 m4 offset-l2 offset-s2 offset-m2" data-position="top" data-delay="50" data-tooltip="Voltar a página inicial para continuar comprando?" href="{{ url('/') }}">Continuar comprando</a>
+                <a class="btn-large tooltipped col l4 s4 m4 offset-l2 offset-s2 offset-m2" data-position="top" data-delay="50" data-tooltip="Voltar a página inicial para continuar comprando?" href="{{ route('sanduiches') }}">Continuar comprando</a>
                 <form method="POST" action="{{ route('carrinho.concluir') }}">
                     {{ csrf_field() }}
                     <input type="hidden" name="pedido_id" value="{{ $pedido->id }}">
@@ -112,7 +107,7 @@
 </form>
 
 @push('scripts')
-    <script type="text/javascript" src="/js/carrinho.js"></script>
+    <script type="text/javascript" src="js/carrinho.js"></script>
 @endpush
 
 @endsection

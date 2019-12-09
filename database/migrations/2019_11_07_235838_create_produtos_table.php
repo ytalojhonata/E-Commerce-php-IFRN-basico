@@ -16,7 +16,10 @@ class CreateProdutosTable extends Migration
         Schema::create('produtos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
+            $table->text('descricao');
             $table->decimal('valor', 6, 2)->default(0);
+            $table->string('imagem');
+            $table->enum('tipo', ['Sanduiche', 'Salada','Sobremesa']);
             $table->enum('ativo', ['S', 'N'])->default('S');
             $table->timestamps();
         });

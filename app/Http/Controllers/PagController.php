@@ -9,33 +9,33 @@ use App\Http\Controllers\Controller;
 class PagController extends Controller
 {
  
-   
+ public function inicio()
+    {
+      return view('home.index');
+    }
+        public function index()
+    {
+        $registros = Produto::where([
+            'tipo'  => 'Sanduiche'
+            ])->get();
 
+        return view('home.produto', compact('registros'));
+    }
+       public function indexsala()
+    {
+        $registros = Produto::where([
+            'tipo'  => 'Salada'
+            ])->get();
 
-   public function inicio()
-    {
-      return view('welcome');
+        return view('cardapio_sa', compact('registros'));
     }
-    public function carda()
+       public function indexso()
     {
-      return view('cardapio_h');
-    }
-    public function carda_h()
-    {
-      return view('cardapio_h');
-    }
-    public function carda_sa()
-    {
-      return view('cardapio_sa');
-    }
-    public function carda_so()
-    {
-      return view('cardapio_so');
-    }
-    
-    
+        $registros = Produto::where([
+            'tipo'  => 'Sobremesa'
+            ])->get();
 
-    
-    
+        return view('cardapio_so', compact('registros'));
+    }
 
 }

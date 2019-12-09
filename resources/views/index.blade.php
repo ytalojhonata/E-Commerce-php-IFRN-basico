@@ -64,14 +64,18 @@
   position: relative;
   right: 117px;
  }
-
-                              
+ .total{
+  margin: 0px 400px;
+ }
+                             
   </style>
 
 </head>
 
 <body>
-
+  <div id="total">
+    
+  
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" style="height: 116px">
     <div class="container">
@@ -85,10 +89,7 @@
           <li class="nav-item">
             
           <div class="btn-group">
-            <a class="nav-link" href="{{ url('/cardapio') }}">Cardápio completo</a>
-            <a class="nav-link" href="{{ url('/cardapio_sanduiches') }}">Sanduíches</a>
-            <a class="nav-link" href="{{ url('/cardapio_saladas') }}">Saladas</a>
-            <a class="nav-link" href="{{ url('/cardapio_sobremesas') }}">Sobremesas</a>
+            <a class="nav-link" href="{{ url('/cardapio') }}">Cardápio</a>
             <a class="nav-link" href="{{ route('login')}}">Login</a>
             <a class="nav-link" href="{{ route('register')}}">Registrar</a>
             <a class="nav-link" href="{{ url('/carrinho') }}">Carrinho</a>
@@ -113,16 +114,16 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('imagens/slideh.png'); height: 700px;">
+        <div class="carousel-item active" style="background-image: url('imagens/slideh.png'); height: 500px; margin: 0px 400px">
           
 
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style= "background-image: url('imagens/Slidec.png');height: 700px; width: 1343px;" >
+        <div class="carousel-item" style= "background-image: url('imagens/Slidec.png');height: 500px; width: 900px; margin: 0px 400px" >
          
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('imagens/slides.png');height: 700px; width: 1343px;">
+        <div class="carousel-item" style="background-image: url('imagens/slides.png');height:900px; width: 900px; margin: 0px 400px">
           
         </div>
       </div>
@@ -187,6 +188,7 @@ function carousel() {
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</div>
 
 </body>
 
