@@ -31,11 +31,11 @@
       height: 30px;
     }
     .bg-dark{
-      background-color: #ff3333!important;
+      background-color: black!important;
     }
     .btn-danger{
-      background-color: #ff3333!important;
-      border-color: #ff3333!important;
+      background-color: black!important;
+      border-color: black!important;
     }
     .dropdown-menu{
       position:relative;
