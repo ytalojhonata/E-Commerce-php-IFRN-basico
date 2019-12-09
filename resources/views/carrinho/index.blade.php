@@ -39,7 +39,7 @@
 
                     <tr>
                         <td>
-                            <img width="100" height="100" src="images/{{ $pedido_produto->produto->imagem }}">
+                            <img width="100" height="100" src="imagens/{{ $pedido_produto->produto->imagem }}">
                         </td>
                         <td class="center-align">
                             <div class="center-align">
