@@ -2,6 +2,15 @@
 @section('pagina_titulo', 'Carrinho de compras - Produtos')
 
 @section('pagina_conteudo')
+<style type="text/css">
+    .nav-wrapper{
+        background-color: black!important; 
+    }
+    .page-footer{
+        background-color: black!important;
+    }
+
+</style>
 	<div class="container">
 		<div class="row">
 			<h3>Lista de produtos</h3>

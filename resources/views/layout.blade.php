@@ -59,7 +59,7 @@
     <footer class="page-footer blue">
         <div class="footer-copyright">
             <div class="container">
-                Desenvolvido para Curso de carrinho de compras com Laravel
+                Copyright &copy; Laricook - 2019
             </div>
         </div>
     </footer>

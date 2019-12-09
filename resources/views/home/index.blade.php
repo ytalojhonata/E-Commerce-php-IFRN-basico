@@ -18,14 +18,12 @@
   <link href="css/modern-business.css" rel="stylesheet">
 
   <style type="text/css">
-    .navbar{
-      height: 130px;
-    }
+    
     .bg-dark{
       background-color: black!important;
     }
     li a:hover, .dropdown:hover .dropbtn {
-    background-color:white;
+    background-color:gray;
     }
     li.dropdown {
       display: inline-block;  
@@ -54,19 +52,18 @@
     }
  .sobremesa-foto{
   position: absolute;
-  top: 1160px;
+  top: 1270px;
   left: 700px;
   
  }
  .salada-img{
-  height: 400px; 
-  width: 1340px;
+  height: 550px; 
+  width: 950px;
   position: relative;
-  right: 117px;
+  right: 26px;
+  top: 10px;
  }
- .total{
-  margin: 0px 400px;
- }
+ 
  .btn-danger{
       background-color: black!important;
       border-color: black!important;
@@ -81,20 +78,39 @@
     .dropdown-item{
       color: white;
     }
+     .logo{
+      height: 90px;
+      width: 200px;
+      position: relative;
+      right: 120px;
+    }
+    .carouselExampleFade{
+      width:950px; 
+      height: 630px;
+    }
+   
+    
+    .w-100{
+      width: 950px!important;
+      height: 650px;
+    }
+    .carousel-item{
+      width:930px!important; 
+    }
+
                              
   </style>
 
 </head>
 
 <body>
-  <div id="total">
+  
     
   
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" style="height: 116px">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top" style="height: 90px">
     <div class="container">
-      <a class="navbar-brand" href="{{ url('/') }}"><img src="imagens/logonew.png"
-        style="height: 110px;width: 150px;"></a>
+      <a class="navbar-brand" href="{{ url('/') }}"><img class="logo" src="imagens/logonew.png"></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -137,46 +153,37 @@
   </nav>
 
   <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('imagens/slideh.png'); height: 500px; margin: 0px 400px">
-          
-
-        </div>
-        <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style= "background-image: url('imagens/Slidec.png');height: 500px; width: 900px; margin: 0px 400px" >
-         
-        </div>
-        <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('imagens/slides.png');height:900px; width: 900px; margin: 0px 400px">
-          
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" style="height: 630px; width: 980px; position: relative; left: 210px;">
+  <div class="carousel-inner" style="height: 630px; width: 1020px;">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="imagens/slideh.png" width="750" height="630" >
     </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imagens/slides.png" width="750" height="630">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="imagens/slidesalada.png" width="750" height="630">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
   </header>
 
   <!-- Page Content -->
-  <div class="container" style="width: 1340px;">
+  <div class="container "style="width: 900px;">
     <a href="{{ url('/cardapio_saladas') }}"><img class="salada-img" src="imagens/saladas.png" ></a>
    </div>
 
    
-    <div class="row" style="width: 1340px;">
-      <div class="col-lg-6">
+    <div class="row" style="width: 1000px; position: relative; left: 120px;">
+      <div class="col-lg-6" style="position: relative; top: 10px;height: 610px!important" >
         <a href="#"><img class="mySlides" src="imagens/delivery1.jpg" style="width:90%" height="600px;">
            <img class="mySlides" src="imagens/delivery3.jpg" style="width:90%" height="600px;">
            <img class="mySlides" src="imagens/delivery2.jpg" style="width:90%" height="600px;"></a>
@@ -184,8 +191,8 @@
   
   </div>
   <div class="sobremesa-foto">
-  <a href="{{ url('/cardapio_sobremesas') }}"><img src="imagens/sobremesa.jpg" style=" height: 590px;
-  width: 540px;"></a>
+  <a href="{{ url('/cardapio_sobremesas') }}"><img src="imagens/sobremesa.jpg" style=" height: 560px;
+  width: 520px;"></a>
     
   </div>
    
@@ -219,7 +226,7 @@ function carousel() {
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-</div>
+
 
 </body>
 

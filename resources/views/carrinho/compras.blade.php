@@ -4,12 +4,12 @@
 @section('pagina_conteudo')
 <style type="text/css">
     .nav-wrapper{
-        background-color: #ff3333!important; 
+        background-color: black!important; 
     }
     .page-footer{
-        background-color: #ff3333!important;
+        background-color: black!important;
     }
-</styl
+
 </style>
 
 <div class="container">
@@ -60,10 +60,7 @@
                                         <strong class="red-text">CANCELADO</strong>
                                     @endif
                                 </td>
-                                 <td>
-                                    <img width="100" height="100" src="imagens/{{ $pedido_produto->produto->imagem }}">
-                                </td>
-                               
+                                <td></td>
                                 <td>{{ $pedido_produto->produto->nome }}</td>
                                 <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>
                                 <td>R$ {{ number_format($pedido_produto->desconto, 2, ',', '.') }}</td>
@@ -125,6 +122,9 @@
                                 $total_pedido += $total_produto;
                             @endphp
                         <tr>
+                            <td>
+                                
+                            </td>
                             
                             <td>{{ $pedido_produto->produto->nome }}</td>
                             <td>R$ {{ number_format($pedido_produto->valor, 2, ',', '.') }}</td>

@@ -3,6 +3,15 @@
 
 @section('pagina_conteudo')
 
+<style type="text/css">
+    .nav-wrapper{
+        background-color: black!important; 
+    }
+    .page-footer{
+        background-color: black!important;
+    }
+
+</style>
 <div class="container">
     <div class="row">
         <h3>Produtos no carrinho</h3>
@@ -33,9 +42,13 @@
                 </thead>
                 <tbody>
                     @php
-                        $total_pedido = 0;
-                    @endphp
-                    @foreach ($pedido->pedido_produtos as $pedido_produto)
+                     $total_pedido = 0;
+                     @endphp
+                     @foreach ($pedido->pedido_produtos_itens as $pedido_produto)
+                     @php
+                        $total_produto = $pedido_produto->valor - $pedido_produto->desconto;
+                            $total_pedido += $total_produto;
+                        @endphp
 
                     <tr>
                         <td>

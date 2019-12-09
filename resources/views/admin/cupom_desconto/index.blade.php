@@ -2,6 +2,15 @@
 @section('pagina_titulo', 'Cupons de desconto')
 
 @section('pagina_conteudo')
+<style type="text/css">
+    .nav-wrapper{
+        background-color: black!important; 
+    }
+    .page-footer{
+        background-color: black!important;
+    }
+
+</style>
 	<div class="container">
 		<div class="row">
 			<h3>Lista de cupons de desconto</h3>
