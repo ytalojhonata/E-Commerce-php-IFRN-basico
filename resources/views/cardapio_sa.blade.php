@@ -124,7 +124,7 @@
         <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
           
           <div class="imagem-fixa" >
-             <img src="imagens/slidec.png" width="820 px" height="630 px">
+             <img src="imagens/slidesalada.png" width="820 px" height="630 px">
           </div>
          </div>
    
